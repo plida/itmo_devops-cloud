@@ -158,7 +158,7 @@ service nginx reload
 ```
 Осталось настроить сайт.
 # 3. Поднятие nginx в контейнере
-На сервере yetti заходим в контейнер cryptids-memes и добавляем файлы сайта (index.html) в папку /home/prj/project/public. 
+На сервере yetti заходим в контейнер cryptids-memes и добавляем файлы сайта в папку /home/prj/project/public, изображения добавим отдельно в подпапку images. 
 В файле /etc/nginx/sites-enabled/default указываем конфигурационный файл nginx:
 ```
 server {
@@ -168,13 +168,24 @@ server {
         index index.php;
         root /home/prj/project/public;
         location /m/ {
-          alias /home/prj/project/public/super/secret/directory/memes/;
+          alias /home/prj/project/public/images/;
         }
 
         location / {
           try_files $uri /index.html index.php;
         }
-
 }
 ```
+Теперь после перезагрузки сервера nginx отображается следующая страница:
+
+![](photo_2024-10-20_02-08-50.jpg)
+
+В конфигурационный файл был указан alias для картинок папке /images: например, если ввести cryptids.plida.ru/m/wendigone.jpg, отобразится изображение, представленное на главной странице.
+
+# Результат
+
+Мы сделали сайт [cryptids.plida.ru](https://cryptids.plida.ru) с помощью файла nginx в контейнере на сервере yetti. Этот сервер может обслуживать множество сервисов и вебсайтов благодаря контейнерам, а также виртуальному серверу, в котором можно создать конфиги для каждого сайта (в sites-enabled/) со своим доменным именем и отдельно их обслуживать. С помощью Let's Encrypt
+был установлен действительный самообновляющийся сертификат с перенаправлением запросов с http на https.
+
+Таким образом мы не просто сделали небольшой локальный сайт, но возложили фундамент для будущих проектов домашнего сервера.
  
