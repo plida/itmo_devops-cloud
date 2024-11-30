@@ -1,0 +1,37 @@
+IT Tower,Service Family,Service Type,Service Sub Type,Service Usage Type,Meter Category,Meter Sub-Category,Meter Name,Consumed Service
+Storage,Storage,Azure Storage,Geo-Redundant Storage,Transfering Data,Data Management,,Geo-Replicated Data Transfer%,
+Storage,Storage,Azure Storage,Geo-Redundant Storage,Storage Usage,Data Management,Geo Redundant,,
+Storage,Storage,Azure Storage,?,?,Data Management,,,
+Machine Learning,Machine Learning,Azure Machine Learning,Azure Machine Learning Studio,Access to API,Machine Learning Studio,Production Web API,,Microsoft.MachineLearning
+Networking,Networking,Azure Bastion,Basic,Pricing Tier,Azure Bastion,,Basic,Microsoft.Network
+Networking,Networking,Azure Bastion,Azure Bastion,Transfering Data,Azure Bastion,,Data Transfer%,Microsoft.Network
+Cloud Services,Internet of Things,API Management,Developer,Pricing Tier,API Management,API Management,Developer,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Standard,Pricing Tier,API Management,API Management,Standard,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Basic,Pricing Tier,API Management,API Management,Basic,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Premium,Pricing Tier,API Management,API Management,Premium,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,API Management,API Consumption Calls,API Management,,Consumption Calls,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Basic,Pricing Tier Units Usage,API Management,,Basic Units,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Developer ,Pricing Tier Units Usage,API Management,,Developer Units,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Premium ,Pricing Tier Units Usage,API Management,,Premium Units,Microsoft.ApiManagement
+Cloud Services,Internet of Things,API Management,Standard ,Pricing Tier Units Usage,API Management,,Standard Units,Microsoft.ApiManagement
+Compute,Compute,Azure Monitor,Insights,Webhook Notifications,Azure Monitor,Notifications,Webhook,microsoft.insights
+Compute,Compute,Azure Monitor,Insights,Email Notifications,Azure Monitor,Notifications,Email,microsoft.insights
+Storage,Storage,Azure Backup,Geo-Redundant Storage,Block Blob Usage,Backup,Geo Redundant Storage,Standard IO - Block Blob (GB),Microsoft.RecoveryServices
+Storage,Storage,Azure Backup,Geo-Redundant Storage,Storing GRS Data,Backup,,GRS Data Stored,Microsoft.RecoveryServices
+Storage,Storage,Azure Backup,Virtual Machines,Instance Protection,Backup,,%Azure VM%Protected Instances,Microsoft.RecoveryServices
+Cloud Services,Analytics,HDInsight,HDInsight,HDInsight Usage,Business Analytics,,Compute Hours,Microsoft.HDInsight
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory Cloud,Data Movement,Business Analytics,Data Factory,Data Movement Cloud,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory On Premises,Data Movement,Business Analytics,Data Factory,Data Movement On Premises,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory Cloud,High Frequency Activity,Business Analytics,Data Factory,High Frequency Cloud Activity,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory On Premises,High Frequency Activity,Business Analytics,Data Factory,High Frequency On Premises  Activity,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory On Premises,Low Frequency Activity,Business Analytics,Data Factory,Low Frequency On Premises  Activity,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Factory,Azure Data Factory Cloud,Low Frequency Activity,Business Analytics,Data Factory,Low Frequency Cloud Activity,Microsoft.DataFactory
+Cloud Services,Analytics,Azure Data Lake Store,Azure Data Lake Store,Storing Data,Business Analytics,Data Lake Store,Data at Rest (GB),Microsoft.DataLakeStore
+Cloud Services,Analytics,Azure Data Lake Store,Azure Data Lake Store,Transactions,Business Analytics,Data Lake Store,Transactions%,Microsoft.DataLakeStore
+Compute,Compute,Virtual Machines,Virtual Machines,Licenses,Virtual Machines Licenses,,,
+Compute,Compute,Virtual Machines,Linux Virtual Machines,VM Usage,Virtual Machines,Red Hat Enterprise Linux%,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,SQL Server on Azure Virtual Machines,VM Usage,Virtual Machines,SQL Server%,Compute Hours,
+Compute,Compute,Virtual Machines,Microsoft Biztalk,VM Usage,Virtual Machines,BizTalk Server,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,Microsoft Biztalk Standard,VM Usage,Virtual Machines,BizTalk Server Standard%,Compute Hours,%Compute
+Compute,Compute,Virtual Machines,Azure Spring Apps,VM Usage,Virtual Machines,Java Development Environment%,Compute Hours,Unassigned
+Compute,Compute,Virtual Machines,Reserved Virtual Machines,VM Usage,Virtual Machines,Reservation%,Compute Hours,%Compute
