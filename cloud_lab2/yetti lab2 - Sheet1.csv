@@ -1,7 +1,7 @@
 IT Tower,Service Family,Service Type,Service Sub Type,Service Usage Type,Meter Category,Meter Sub-Category,Meter Name,Consumed Service
 Storage,Storage,Azure Storage,Geo-Redundant Storage,Transfering Data,Data Management,,Geo-Replicated Data Transfer%,
 Storage,Storage,Azure Storage,Geo-Redundant Storage,Storage Usage,Data Management,Geo Redundant,,
-Storage,Storage,Azure Storage,?,?,Data Management,,,
+Storage,Storage,Azure Storage,Azure Blob Storage,Storage Usage,Data Management,,,
 Machine Learning,Machine Learning,Azure Machine Learning,Azure Machine Learning Studio,Access to API,Machine Learning Studio,Production Web API,,Microsoft.MachineLearning
 Networking,Networking,Azure Bastion,Basic,Pricing Tier,Azure Bastion,,Basic,Microsoft.Network
 Networking,Networking,Azure Bastion,Azure Bastion,Transfering Data,Azure Bastion,,Data Transfer%,Microsoft.Network
