@@ -12,7 +12,6 @@ def calculate(a, b, oper):
                   return a / b
             return False
       except TypeError:
-            print("TypeError!")
             return False
 
 
