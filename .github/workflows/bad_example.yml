@@ -8,11 +8,11 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - working-directory: ./devops_lab3
       - name: test
         run: |
             sudo apt-get update
             sudo apt-get install -y python3
-            cd devops_lab3
             python3 -m unittest test_main.py
       - name: deploy
         run: |
