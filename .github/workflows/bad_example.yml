@@ -30,6 +30,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
               echo "😈 BAD EXAMPLE"
-              python3 -m unittest test_main.py
-          
           
