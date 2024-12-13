@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.12'
           cache: 'pip'
+
+      - name: Set Dependencies
+        run: pip install -r requirements.txt
   
       - name: Install pytest
         run: |
@@ -41,6 +44,9 @@ jobs:
         with:
           python-version: '3.12'
           cache: 'pip'
+
+      - name: Set Dependencies
+        run: pip install -r requirements.txt
       
       - name: Deployment
         run: |
