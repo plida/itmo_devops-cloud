@@ -21,7 +21,6 @@ jobs:
             python3 -m unittest test_main.py
       - name: deploy
         run: |
-            echo "Triggered by a ${{ github.event_name }} event."
-            echo "Runner OS: ${{ runner.os }}!"
-            echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+            echo "😈 BAD EXAMPLE"
+          
       
