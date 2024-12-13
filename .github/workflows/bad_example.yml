@@ -5,22 +5,22 @@ on:
     branches: [ ci-cd-test ]
 
 jobs:
-  main:
-    
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./devops_lab3
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: test
-        run: |
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - working-directory: ./devops_lab3
+        - run: |
             sudo apt-get update
             sudo apt-get install -y python3
             python3 -m unittest test_main.py
-      - name: deploy
-        run: |
-            echo "😈 BAD EXAMPLE"
+  deploy:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - working-directory: ./devops_lab3
+      - run: |
+              echo "😈 BAD EXAMPLE"
+              python3 -m unittest test_main.py
           
-      
+          
