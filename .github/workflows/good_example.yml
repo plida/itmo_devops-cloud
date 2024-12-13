@@ -43,5 +43,5 @@ jobs:
       - name: Deployment
         run: |
               echo "😇 GOOD EXAMPLE"
-              pytest main.py
+              python helloworld.py
           
