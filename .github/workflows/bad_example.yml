@@ -7,15 +7,16 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./devops_lab3
     steps:
       - name: test
-        working-directory: /devops_lab3
         run: |
             sudo apt-get update
             sudo apt-get install -y python3
             python3 -m unittest test_main.py
       - name: deploy
-        working-directory: /devops_lab3
         run: |
             echo "Triggered by a ${{ github.event_name }} event."
             echo "Runner OS: ${{ runner.os }}!"
