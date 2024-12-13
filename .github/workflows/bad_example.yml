@@ -1,0 +1,22 @@
+name: CI-CD_devoops 
+
+on: 
+  push:
+    branches: [ ci-cd-test ]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: |
+            sudo apt-get update
+            sudo apt-get install -y python3
+            cd devops_lab3
+            python3 -m unittest test_main.py
+      - name: deploy
+        run: |
+            echo "Triggered by a ${{ github.event_name }} event."
+            echo "Runner OS: ${{ runner.os }}!"
+            echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      
