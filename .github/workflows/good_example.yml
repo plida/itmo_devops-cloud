@@ -1,0 +1,47 @@
+name: CI-CD_devOPs 
+
+defaults:
+      run:
+        working-directory: ./devops_lab3
+
+on: 
+  push:
+    branches: [ ci-cd-test ]
+
+jobs:
+  Test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+  
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+  
+      - name: Install pytest
+        run: |
+          pip install pytest
+          
+      - name: Launch Test
+        run: |
+          pytest test_main.py
+          
+  Deploy:
+    needs: Test
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Deployment
+        run: |
+              echo "😇 GOOD EXAMPLE"
+              python helloworld.py
+          
