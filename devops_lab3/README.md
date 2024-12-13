@@ -3,7 +3,7 @@
 ## "Плохой" CI/CD файл
 > Написать “плохой” CI/CD файл, который работает, но в нем есть не менее пяти “bad practices” по написанию CI/CD
 
-[Написанный файл находится в этом репозитории](https://github.com/plida/itmo_devops-cloud/blob/ci-cd-test/.github/workflows/bad_example.yml).
+[Написанный файл находится в этом репозитории](https://github.com/plida/itmo_devops-cloud/blob/master/.github/workflows/bad_example.yml).
 
 ```
 name: CI-CD_devoops 
@@ -49,7 +49,7 @@ jobs:
 ## "Хороший" CI/CD файл
 > Написать “хороший” CI/CD, в котором эти плохие практики исправлены
 
-[Написанный файл находится в этом репозитории](https://github.com/plida/itmo_devops-cloud/blob/ci-cd-test/.github/workflows/good_example.yml).
+[Написанный файл находится в этом репозитории](https://github.com/plida/itmo_devops-cloud/blob/master/.github/workflows/good_example.yml).
 
 ```
 name: CI-CD_devOPs 
