@@ -6,7 +6,8 @@ defaults:
 
 on: 
   push:
-    branches: [ ci-cd-test ]
+    branches:
+          - main
 
 jobs:
   Test:
@@ -19,6 +20,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+          cache: 'pip'
   
       - name: Install pytest
         run: |
@@ -39,6 +41,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+          cache: 'pip'
 
       - name: Deployment
         run: |
