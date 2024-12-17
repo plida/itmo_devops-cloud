@@ -3,7 +3,7 @@ name: CI-CD_devoops
 on: 
   push:
     branches:
-      - main
+      - master
 
 jobs:
   Test:
