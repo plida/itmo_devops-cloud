@@ -165,14 +165,13 @@ server {
         listen 80;
         add_header x-who cryptids-memes.yetti;
         server_name _;
-        index index.php;
+        index index.php index.html;
         root /home/prj/project/public;
         location /m/ {
-          alias /home/prj/project/public/images/;
+                alias /home/prj/project/public/images/;
         }
-
         location / {
-          try_files $uri /index.html index.php;
+          try_files $uri $uri/ =404;
         }
 }
 ```
