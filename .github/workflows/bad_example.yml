@@ -2,7 +2,8 @@ name: CI-CD_devoops
 
 on: 
   push:
-    branches: [ ci-cd-test ]
+    branches:
+      - main
 
 jobs:
   Test:
